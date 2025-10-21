@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<link href="styles.css" rel="stylesheet"/>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Astro Weight Calculator</title>
+</head>
+
+<body class="body">
+  <h1 class="h1">The real deal astro weight calculator!</h1>
+  <h2 class="h2">Please enter the weight and planet you are headed to: </h2>
+  <form class="div" style=" padding: 0px; color: antiquewhite;">
+    <div class="pluto" style="border: 2px darkorange; color: antiquewhite; padding: 10px;">
+      <h4>Is pluto a planet???</h4>
+      <input id="plutoYes" type="radio" name="plutoYesNo" value="true" />
+      <label for="yes">Yes</label>
+      <input id ="plutoNo" type="radio" name="plutoYesNo" value="false" />
+      <label for="no">No</label>
+    </div >
+    <label class="label" for="Enter Weight in lbs">Weight (lbs)</label>
+    <input class="label" type="number" id="weight" placeholder="Enter Weight in lbs" required />
+    <label class="label" for="planets">Choose a planet:</label>
+    <select class="label" id="planets">
+      <option value="null" disabled selected>Select your option</option>
+      <option value="0.38">Mercury</option>
+      <option value="0.91">Venus</option>
+      <option value="1">Earth</option>
+      <option value="0.38">Mars</option>
+      <option value="2.34">Jupiter</option>
+      <option value="1.06">Saturn</option>
+      <option value="0.92">Uranus</option>
+      <option value="1.19">Neptune</option>
+      <option disabled id="plutoPlanet" value="0.06">Pluto</option>
+    </select>
+    <button onclick="callMath(document.getElementById('weight').value, document.getElementById('planets').value)" type="button" id="calculate">Calculate Weight</button>
+    <h3 class="h3" id="result">Result</h3>
+    
+
+  </form>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
+<footer class="footer">created by <a href="https://github.com/anthonymetzger"> Anthony Metzger</a></footer>
+

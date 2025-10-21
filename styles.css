@@ -1,0 +1,50 @@
+.body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10%;
+  color: antiquewhite;
+  background-color: #717378;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg');
+}
+.h1, .h2 {
+  font-family: OCR A Std, monospace;
+  text-align: center;
+  color: antiquewhite;
+}
+.footer {
+  padding: 5%;
+  text-align: center;
+  color: white;
+}
+:link {
+  color: white;
+}
+:visited {
+  color: darkorange;
+}
+.pluto {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.questions {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+.label {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: OCR A Std, monospace;
+  font-size: 20px;
+}
+.div {
+  border: 2px darkorange;
+  border-style: dotted;
+
+}
