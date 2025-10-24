@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link lang="en" href="styles.css" rel="stylesheet"/>
+<link lang="en" href="styles.css" rel="stylesheet" />
 <html>
 
 <head>
@@ -13,31 +13,32 @@
   <form class="div" style=" padding: 0px; color: antiquewhite;">
     <div class="pluto" style="border: 2px darkorange; color: antiquewhite; padding: 10px;">
       <h4>Is pluto a planet???</h4>
-      <input id="plutoYes" type="radio" name="plutoYesNo" value="true" />
+      <input onclick="isPlutoPlanet()" id="plutoYes" type="radio" name="plutoYesNo" value="true" />
       <label for="yes">Yes</label>
-      <input id ="plutoNo" type="radio" name="plutoYesNo" value="false" />
+      <input onclick="isPlutoPlanet()" id="plutoNo" type="radio" name="plutoYesNo" value="false" />
       <label for="no">No</label>
-    </div >
+    </div>
     <label class="label" for="Enter Weight in lbs">Weight (lbs)</label>
-    <input class="label" type="number" id="weight" placeholder="Enter Weight in lbs" required />
+    <input class="label" type="number" id="user-weight" placeholder="Enter Weight in lbs" required />
     <label class="label" for="planets">Choose a planet:</label>
     <select class="label" id="planets">
-      <option value="null" disabled selected>Select your option</option>
+      <!--    <option value="null" disabled selected>Select your option</option>
       <option value="0.38">Mercury</option>
-      <option value="0.91">Venus</option>
-      <option value="1">Earth</option>
-      <option value="0.38">Mars</option>
-      <option value="2.34">Jupiter</option>
-      <option value="1.06">Saturn</option>
-      <option value="0.92">Uranus</option>
-      <option value="1.19">Neptune</option>
-      <option disabled id="plutoPlanet" value="0.06">Pluto</option>
+   <option value="0.91">Venus</option>
+   <option value="1">Earth</option>
+   <option value="0.38">Mars</option>
+   <option value="2.34">Jupiter</option>
+   <option value="1.06">Saturn</option>
+   <option value="0.92">Uranus</option>
+   <option value="1.19">Neptune</option>
+   <option disabled id="plutoPlanet" value="0.06">Pluto</option>-->
     </select>
-    <button onclick="callMath(document.getElementById('weight').value, document.getElementById('planets').value)" type="button" id="calculate">Calculate Weight</button>
-    <h3 class="h3" id="result">Result</h3>
-    
+    <button onclick="handleClickEvent()" type="button" id="calculate-button">Calculate Weight</button>
+    <p class="h3" id="output">Result</p>
+
 
   </form>
+  
   <script src="main.js" charset="utf-8"></script>
 </body>
 
